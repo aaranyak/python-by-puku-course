@@ -1,16 +1,106 @@
-title: Python by Puku
-description: This is a fun and simple python course for young codersaaranyak/new
+title: "Python by Puku"
+tagline: "A fun and simple python cource for ages 9 and above"
+description: "This will be a fun and simple python course for kids. In this course, we will learn the basics of python, and how to use them in real-life contexts."
+
+
+# Repository setup
+# The following section template information for the repository
+# This will be used when the repository is crated for each individual learner
+
 template:
-  repo: python-by-puku-template
-  name: python-by-puku
+  name: Python-by-Puku
+  repo: PythonforPuku-lab-test
+  description: 'This is the repository for the python-by-puku course. '
+
+# `before` block
+# Actions to take place after the learner registers, but before they start interacting with their repo
 before:
-  - type: createIssue
-    title: Welcome!
-    body: new-issue.md
+- type: respond
+  with: 01_first-response.md
+
+
+# Steps for the course
+# A list of steps that take the learner through the course
+# Create one step for each action that a learner will complete
+
+
 steps:
-  - title: First step
-    description: The first step in your course
-    event: issues.assigned
-    link: '{{ repoUrl }}'
+
+  - title: "Introduce your program"
+    description: "Let's introduce our computer program to everybody"
+    event:  	pull_request.synchronize
+    actions: # a list of the actions that will occur when the step is triggered by an event
+    - type: gate
+      left: '%payload.changes[body][to]%'
+      operator: ===
+      right: print("Welcome to the age app!")
+      else:
+       - type: respond
+         with: 01_try-again.md
+    - type: respond
+      with: 01_nice-work.md
+    - type: respond
+      with: 02_activity.md
+
+   
+
+
+  - title: "Get the user's input"
+    description: "Learn how to know what the user want's to say"
+    event:  	pull_request.synchronize
     actions:
-      - type: closeIssue
+    - type: gate
+      left: '%payload.changes[body][to]%'
+      operator: ===
+      right: var = input("How old are you?")
+      else:
+       - type: respond
+         with: 01_try-again.md
+    - type: respond
+      with: 02_nice-work.md
+    - type: respond
+      with: 03_activity.md
+
+
+  - title: "Calculate the date"
+    description: "This is the most important bit of writing a program"
+    event:  	pull_request.synchronize
+    actions: # a list of the actions that will occur when the step is triggered by an event
+    - type: gate
+      left: '%payload.changes[body][to]%'
+      operator: ===
+      right: date = 2020 - age
+      else:
+       - type: respond
+         with: 01_try-again.md
+    - type: respond
+      with: 03_nice-work.md
+    - type: respond
+      with: 04_activity.md
+
+
+  - title: "Show the output"
+    description: "Now let's tell the user our output"
+    event:  	pull_request.synchronize
+    actions: # a list of the actions that will occur when the step is triggered by an event
+    - type: gate
+      left: '%payload.changes[body][to]%'
+      operator: ===
+      right: print("You were born on", date)
+      else:
+       - type: respond
+         with: 01_try-again.md
+    - type: respond
+      with: 04_nice-work.md
+    - type: respond
+      with: 05_activity.md
+
+  - title: "End the course"
+    description: "Finish the course"
+    event:  	issue_comment.created
+    actions: # a list of the actions that will occur when the step is triggered by an event
+    - type: respond
+      with: end_message.md
+    - type: respond
+      with: 03_activity.md
+
