@@ -1,4 +1,4 @@
-# [Python by Puku](https://lab.github.com/aaranyak/Python-by-Puku/)
+# [Python by Puku](https://lab.github.com/aaranyak/python-by-puku/)
 
 ### A simple python course for young coders
 
@@ -49,6 +49,8 @@ Here are a few important things you will need for this course.
 
 3. You will need all the git and git commands
 ​
+---
+---
 
 ## Contct Information
 
