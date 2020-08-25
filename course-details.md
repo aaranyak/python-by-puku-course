@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# [Python by Puku](https://lab.github.com/aaranyak/Python-by-Puku/)
-=======
 # [Python by Puku](https://lab.github.com/aaranyak/python-by-puku/)
->>>>>>> ee540626462c09b812ae9fb0cdf6c001cbbd8259
 
 ### A simple python course for young coders
 
@@ -28,11 +24,10 @@ For more information, contact [Aaranyak](https://mail.google.com/mail/u/0/?view=
 ---
 ---
 
-​
 ## Course Requierments
 
 ###### [Get python here](https://python.org)
-​
+
 Here are a few important things you will need for this course.
 
 1. You will need to know how to use github:
@@ -52,17 +47,12 @@ Here are a few important things you will need for this course.
 3. You will need a text editor, A good one is atom [Get Atom Here](https://www.atom.io)
 
 3. You will need all the git and git commands
-​
+
 ---
 ---
 
 ## Contct Information
 
-<<<<<<< HEAD
-## Contct Information
-
-=======
->>>>>>> ee540626462c09b812ae9fb0cdf6c001cbbd8259
 ##### [To report a bug, go here.](https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=aaranyak.ghosh@gmail.com&su=Bug+Report+For+PythonbyPuku)
 
 ##### For more information, contact [Aaranyak](https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=aaranyak.ghosh@gmail.com&su=Python+by+Puku)
