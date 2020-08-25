@@ -1,4 +1,4 @@
-# [Python by Puku](https://lab.github.com/aaranyak/Python-by-Puku/)
+# [Python by Puku](https://lab.github.com/aaranyak/python-by-puku/)
 
 ### A simple python course for young coders
 
