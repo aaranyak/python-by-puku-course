@@ -5,7 +5,7 @@ description: >-
   learn the basics of python, and how to use them in real-life contexts.
 template:
   name: Python-by-Puku
-  repo: PythonforPuku-lab-test
+  repo: aaranyak/PythonforPuku-lab-test
   description: 'This is the repository for the python-by-puku course. '
 before:
   - type: respond
@@ -77,6 +77,3 @@ steps:
     actions:
       - type: respond
         with: end_message.md
-
-
-
